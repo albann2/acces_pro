@@ -1,0 +1,142 @@
+#cont{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.image{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    transition: all 0.5s ease;
+}
+.principal.active .image{
+    padding-left: 7%;
+    transition: all 0.5s ease;
+}
+.image div{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border: 1px solid rgb(107, 177, 235);
+}
+.image div #P1{
+    display: grid;
+    justify-content: center;
+    padding-top: 30%;
+    font-size: 100px;
+    visibility: hidden;
+}
+.image div:hover #P1{
+    visibility: visible;
+}
+.image div #P1 a{
+    text-decoration: none;
+    color: grey;
+}
+.image .tootip{
+    padding: 2%;
+    position: absolute;
+    background: #ffffff;
+    box-shadow: 0 5px 10px black;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 6px;
+    transition: 0s;
+    opacity: 0;
+    pointer-events: none;
+}
+.image div:hover .tootip, .image div:focus .tootip{
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+.I1{
+    background-image: url(../IMG/camera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.I1:hover{
+    background: linear-gradient(rgba(107, 177, 235, 0.7), rgba(107, 177, 235, 0.7)), url(../IMG/camera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.I2{
+    background-image: url(../IMG/camera2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.I2:hover{
+    background: linear-gradient(rgba(107, 177, 235, 0.7), rgba(107, 177, 235, 0.7)), url(../IMG/camera2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.I3{
+    background-image: url(../IMG/ill.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.I3:hover{
+    background: linear-gradient(rgba(107, 177, 235, 0.7), rgba(107, 177, 235, 0.7)), url(../IMG/ill.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.I4{
+    background-image: url(../IMG/camera.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.I4:hover{
+    background: linear-gradient(rgba(107, 177, 235, 0.7), rgba(107, 177, 235, 0.7)), url(../IMG/camera.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.I5{
+    background-image: url(../IMG/web.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.I5:hover{
+    background: linear-gradient(rgba(107, 177, 235, 0.7), rgba(107, 177, 235, 0.7)), url(../IMG/web.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.I6{
+    background-image: url(../IMG/web2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.I6:hover{
+    background: linear-gradient(rgba(107, 177, 235, 0.7), rgba(107, 177, 235, 0.7)), url(../IMG/web2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.I7{
+    background-image: url(../IMG/ill2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.I7:hover{
+    background: linear-gradient(rgba(107, 177, 235, 0.7), rgba(107, 177, 235, 0.7)), url(../IMG/ill2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.I8{
+    background-image: url(../IMG/ill3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.I8:hover{
+    background: linear-gradient(rgba(107, 177, 235, 0.7), rgba(107, 177, 235, 0.7)), url(../IMG/ill3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.I9{
+    background-image: url(../IMG/web3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.I9:hover{
+    background: linear-gradient(rgba(107, 177, 235, 0.7), rgba(107, 177, 235, 0.7)), url(../IMG/web3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

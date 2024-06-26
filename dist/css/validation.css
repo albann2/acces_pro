@@ -1,0 +1,128 @@
+.droite{
+  display: flex;
+  flex-direction: column;
+}
+
+.droite .haut{
+  padding: 2%;
+}
+.droite .haut p{
+  font-weight: bold;
+}
+.droite .haut i{
+  margin-right: 5%;
+  background-color: rgb(233, 232, 232);
+  padding: 2%;
+  border-radius: 100%;
+  color: black;
+  cursor: pointer;
+} 
+
+.bas{
+  width: 100%;
+  margin: auto;
+}
+
+.bas .wrapper{
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.wrapper span{
+  color: #3959FF;
+}
+
+.wrapper .bol{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.wrapper p:last-child{
+  color: grey;
+  font-size: 12.5px;
+}
+
+.wrapper form {
+  width: 100%;
+}
+
+.wrapper form .group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 36px;
+}
+
+.wrapper form .group input {
+  width: 45px;
+  height: 45px;
+  margin: 0 8px 0 0;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 3px;
+  border: none;
+  color: transparent;
+  background: #f0f0f0;
+  text-shadow: 0 0 0 #000;
+  transition: 0.1s ease-in-out;
+}
+
+.wrapper form .group input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.wrapper form .group input:focus {
+  outline-offset: 3px;
+  outline: 2px solid #3959FF;
+}
+
+.wrapper form button {
+  width: 100%;
+  color: white;
+    border: none;
+    background-color: #3959FF;
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 3%;
+    font-weight: bold;
+    cursor: pointer;
+  pointer-events: none;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.wrapper form button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.wrapper form button:hover {
+  background: #2c47ce;
+}
+
+@media screen and (max-width:1024px){
+  .gauche{
+      display: none;
+  }
+  .droite{
+      min-width: 100%;
+      max-width: 100%;
+  }
+  .droite .bas{
+      width: 80%;
+  }
+  .bas .wrapper{
+    width: 100%;
+  }
+  .wrapper form .group input{
+    width: 55px;
+    height: 55px;
+  }
+}

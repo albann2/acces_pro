@@ -1,0 +1,54 @@
+.droite{
+    display: flex;
+    flex-direction: column;
+}
+.droite .haut{
+    padding: 2%;
+}
+.droite p{
+    font-weight: bold;
+}
+.droite a{
+    text-decoration: none;
+}
+.droite .haut i{
+    margin-right: 5%;
+    background-color: rgb(233, 232, 232);
+    padding: 2%;
+    border-radius: 100%;
+    color: black;
+    cursor: pointer;
+} 
+
+.droite .bas{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.droite .link{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.droite .link a{
+    padding: 30px;
+    color: black;
+    border: 1px solid #3959FF;
+    border-radius: 5px;
+    background-color: #A3B1FF;
+}
+@media screen and (max-width:1024px){
+    .gauche{
+        display: none;
+    }
+    .droite{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .droite .bas{
+        width: 80%;
+    }
+}

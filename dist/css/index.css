@@ -1,0 +1,102 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.principal{
+    width: 100vw;
+    height: 100vh;
+    font-size: normal;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    overflow: hidden;
+}
+
+.gauche{
+    width: 35%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin: 5% auto 0% auto;
+}
+.gauche .haut{
+    text-align: center;
+}
+.gauche .haut img{
+    width: 25%;
+}
+.gauche .mil{
+    color: #3959FF;
+    width: 50%;
+    font-size: 25px;
+    padding: 3%;
+}
+.gauche .bas{
+    padding: 3%;
+}
+.gauche a{
+    width: 45%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 28px 11px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px 0 0 0;
+    text-decoration: none;
+}
+.gauche a:first-child{
+    color: #fff;
+    background-color: #E11D40;
+    border: 1px solid #E11D40;
+}
+.gauche a:first-child:hover{
+    color: #E11D40;
+    background-color: #fff;
+}
+.gauche a:last-child{
+    color: #E11D40;
+    background-color: #fff;
+    border: 1px solid #E11D40;
+}
+.gauche a:last-child:hover{
+    color: #fff;
+    background-color: #E11D40;
+}
+
+.droite{
+    width: 65%;
+    height: 100%;
+}
+.droite img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width:1200px) {
+    .gauche .bas{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .gauche a{
+        width: 100%;
+    }
+}
+@media screen and (max-width:850px){
+    .droite{
+      display: none;
+    }
+    .gauche{
+        width: 100%;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin: auto;
+    }
+  }
